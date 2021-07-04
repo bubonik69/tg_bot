@@ -59,6 +59,7 @@ func handlerMessage(bot *tgbotapi.BotAPI, update tgbotapi.Update, pathDictJson s
 	}
 	//сравнить полученный текст с нашей структурой
 	var msg string
+	msg="Я не знаю что ответить =("
 	for key,val:= range myDict.Intents{
 		for _,answer:=range val.Examples{
 			//if answer==newStr{
